@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Forscherkarte: Die Geisterhand</title><style>
+:root{--ink:#1f2d3a;--teal:#0f6b7a;--tealL:#e6f3f5;--amber:#d9822b;--amberL:#fdf1de;--line:#c5d3d7;--red:#d64545;--green:#3f9b5f}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#e9eef0;color:var(--ink);font-family:"Avenir Next","Trebuchet MS","Segoe UI",system-ui,sans-serif;font-size:11pt;line-height:1.42}
+.page{width:210mm;height:297mm;background:#fff;margin:10mm auto;padding:12mm 14mm;position:relative;overflow:hidden;box-shadow:0 2px 14px rgba(0,0,0,.18)}
+.toolbar{position:fixed;top:12px;right:16px;z-index:10;display:flex;gap:8px}
+.toolbar button{font:600 13px/1 inherit;font-family:inherit;border:0;border-radius:999px;padding:10px 16px;background:var(--teal);color:#fff;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+.toolbar button.alt{background:#fff;color:var(--teal);border:1.5px solid var(--teal)}
+.head{display:flex;align-items:center;gap:14px;border-bottom:3px solid var(--teal);padding-bottom:9px}
+.head .txt{flex:1}
+.label{font-size:9pt;letter-spacing:.09em;text-transform:uppercase;font-weight:700;color:var(--teal)}
+h1{margin:1px 0 0;font-size:25pt;line-height:1.05;letter-spacing:-.01em}
+.sub{margin-top:3px;font-size:11.5pt;color:#4b5f6a}
+.idline{display:flex;gap:10px;margin:9px 0 10px;font-size:9.5pt;color:#4b5f6a}
+.idline span{flex:1;border-bottom:1px solid #9fb2b8;padding-bottom:1px}
+.idline span:first-child{flex:2.2}
+h2{font-size:13pt;margin:0 0 4px}
+.box{border:1.5px solid var(--line);border-radius:10px;padding:9px 12px}
+.box.teal{background:var(--tealL);border-color:#b8dbe0}
+.box.amber{background:var(--amberL);border-color:#f0d3a6}
+.step{display:flex;gap:10px;align-items:flex-start;margin-top:15px}
+.num{flex:none;width:8.5mm;height:8.5mm;border-radius:50%;background:var(--teal);color:#fff;font-weight:700;font-size:12pt;display:flex;align-items:center;justify-content:center;margin-top:1px}
+.num.amber{background:var(--amber)}
+.step .body{flex:1}
+.step h3{margin:0 0 2px;font-size:12pt}
+.cbrow{display:flex;flex-wrap:wrap;gap:4px 18px;margin:3px 0}
+.cb{display:inline-flex;gap:6px;align-items:center}
+.cb i{display:inline-block;width:4.2mm;height:4.2mm;border:1.6px solid var(--teal);border-radius:3px;background:#fff}
+.line{border-bottom:1px solid #9fb2b8;height:8.2mm}
+.hint{font-size:9.5pt;color:#4b5f6a}
+.rules{margin:6px 0 0;padding:0;list-style:none;font-size:10pt}
+.rules li{display:flex;gap:7px;margin:3px 0}
+.rules b{flex:none;width:5.2mm;height:5.2mm;border-radius:50%;border:1.6px solid var(--amber);color:var(--amber);font-size:8.5pt;display:flex;align-items:center;justify-content:center}
+@media print{
+ @page{size:A4;margin:0}
+ body{background:#fff}
+ .page{margin:0;box-shadow:none;break-after:page;page-break-after:always}
+ .page:last-child{break-after:auto;page-break-after:auto}
+ .toolbar{display:none}
+ *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+
+.sk{margin-top:8px;border:1.5px solid var(--line);border-radius:10px;padding:6px 10px 4px;background:#fff}
+.sk svg{width:100%;height:auto;display:block}
+.two{display:flex;gap:10px;margin-top:8px}
+.two>div{flex:1;text-align:center}
+.two h3{margin:0 0 2px;font-size:11.5pt}
+.two svg{width:100%;height:auto}
+.legend{display:flex;gap:16px;justify-content:center;font-size:10pt;margin:6px 0 0}
+.legend i{display:inline-block;width:3.6mm;height:3.6mm;border-radius:50%;vertical-align:-.7mm;margin-right:5px}
+.wort{display:inline-block;border:1.5px solid var(--teal);border-radius:8px;padding:1px 9px;margin:2px 4px 2px 0;font-weight:600;font-size:10.5pt;color:var(--teal)}
+.gapline{display:inline-block;width:48mm;border-bottom:1.5px solid var(--ink)}
+</style></head><body><div class="toolbar"><button onclick="window.print()">Als PDF herunterladen</button></div>
+<section class="page">
+  <div class="head"><div class="txt"><div class="label">Natur und Technik · Forscherkarte</div><h1>Die Geisterhand</h1><div class="sub">Was bewegt die Kompassnadel, ohne dass sie jemand berührt?</div></div><svg viewBox="0 0 60 60" width="60" xmlns="http://www.w3.org/2000/svg"><circle cx="30" cy="30" r="25" fill="#fff" stroke="#0f6b7a" stroke-width="3"/><circle cx="30" cy="30" r="19" fill="none" stroke="#b6c6cb" stroke-width="1" stroke-dasharray="2 3"/><g transform="rotate(32 30 30)"><polygon points="30.0,13.0 35.5,30.0 24.5,30.0" fill="#d64545"/><polygon points="30.0,47.0 35.5,30.0 24.5,30.0" fill="#3f9b5f"/></g><circle cx="30" cy="30" r="2.2" fill="#fff"/></svg></div>
+  <div class="idline"><span>Name:</span><span>Klasse:</span><span>Datum:</span></div>
+  <div class="box teal">
+    <h2>So ist euer Versuch aufgebaut</h2>
+    <div class="sk" style="margin-top:4px"><svg viewBox="0 0 600 190" width="560" xmlns="http://www.w3.org/2000/svg" font-family="Avenir Next, Trebuchet MS, Segoe UI, sans-serif"><rect x="14" y="34" width="116" height="116" rx="10" fill="#fff" stroke="#0f6b7a" stroke-width="2.2"/><text x="72" y="56" text-anchor="middle" font-size="13" font-weight="700" fill="#0f6b7a">Netzgerät</text><text x="72" y="72" text-anchor="middle" font-size="10.5" fill="#1f2d3a">Gleichspannung</text><text x="72" y="86" text-anchor="middle" font-size="10.5" fill="#1f2d3a">(DC) ca. 6 V</text><circle cx="130" cy="108" r="6" fill="#d64545"/><text x="112" y="112" font-size="14" font-weight="700" fill="#d64545">+</text><circle cx="130" cy="136" r="6" fill="#1f2d3a"/><text x="114" y="140" font-size="16" font-weight="700" fill="#1f2d3a">−</text><polyline points="130,108 160,108 160,75 232,75" stroke="#1f2d3a" stroke-width="2" fill="none" stroke-linejoin="round"/><polyline points="272,75 328,75" stroke="#1f2d3a" stroke-width="2" fill="none" stroke-linejoin="round"/><polyline points="372,75 440,75 440,160 160,160 160,136 130,136" stroke="#1f2d3a" stroke-width="2" fill="none" stroke-linejoin="round"/><circle cx="232" cy="75" r="4.5" fill="#1f2d3a"/><circle cx="272" cy="75" r="4.5" fill="#1f2d3a"/><line x1="232" y1="75" x2="268" y2="56" stroke="#1f2d3a" stroke-width="2.4"/><text x="252" y="44" text-anchor="middle" font-size="12" font-weight="700" fill="#1f2d3a">Taster</text><circle cx="350" cy="75" r="22" fill="#fff8e6" stroke="#d9822b" stroke-width="2.4"/><path d="M335,60 L365,90 M365,60 L335,90" stroke="#d9822b" stroke-width="2.2"/><text x="350" y="40" text-anchor="middle" font-size="12" font-weight="700" fill="#d9822b">Lampe</text><text x="350" y="116" text-anchor="middle" font-size="10.5" fill="#1f2d3a">schützt vor</text><text x="350" y="129" text-anchor="middle" font-size="10.5" fill="#1f2d3a">Kurzschluss</text><circle cx="440" cy="118" r="30" fill="#fff" stroke="#0f6b7a" stroke-width="2.4"/><polygon points="440.0,97.0 446.0,118.0 434.0,118.0" fill="#d64545"/><polygon points="440.0,139.0 446.0,118.0 434.0,118.0" fill="#3f9b5f"/><line x1="440" y1="75" x2="440" y2="160" stroke="#d9822b" stroke-width="5" stroke-linecap="round"/><text x="482" y="92" font-size="12" font-weight="700" fill="#d9822b">Draht</text><text x="482" y="106" font-size="10.5" fill="#1f2d3a">liegt direkt über</text><text x="482" y="119" font-size="10.5" fill="#1f2d3a">dem Kompass,</text><text x="482" y="132" font-size="10.5" fill="#1f2d3a">parallel zur Nadel</text><text x="440" y="182" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0f6b7a">Kompass</text></svg></div>
+    <ul class="rules">
+      <li><b>1</b><span>Euer Aufbau wird von der Lehrkraft abgenommen, <u>bevor</u> ihr den Taster drückt.</span></li>
+      <li><b>2</b><span>Taster nur kurz drücken, höchstens 3 Sekunden. Dann wieder loslassen.</span></li>
+      <li><b>3</b><span>Zum Umpolen tauscht ihr nur die zwei Kabelenden am Draht, bei losgelassenem Taster.</span></li>
+    </ul>
+  </div>
+
+  <div class="step"><div class="num">0</div><div class="body">
+    <h3>Erst nur beobachten</h3>
+    <div>Drück den Taster kurz. Schreib auf, <b>alles</b>, was du siehst.</div>
+    <div class="line"></div><div class="line"></div><div class="line"></div>
+  </div></div>
+
+  <div class="step"><div class="num">1</div><div class="body">
+    <h3>Strom wieder aus</h3>
+    <div><b>Ich vermute:</b> Wenn ich den Taster loslasse, …</div>
+    <div class="cbrow"><span class="cb"><i></i>bleibt die Nadel abgelenkt</span><span class="cb"><i></i>dreht sie zurück nach Norden</span><span class="cb"><i></i>dreht sie noch weiter</span></div>
+    <div class="hint" style="margin-top:3px">Probier es aus.&nbsp;&nbsp; Meine Vermutung war: <span class="cb"><i></i>richtig</span> <span class="cb"><i></i>falsch</span></div>
+    <div style="margin-top:4px">Das habe ich gesehen:</div><div class="line"></div>
+  </div></div>
+
+  <div class="step"><div class="num">2</div><div class="body">
+    <h3>Umpolen</h3>
+    <div><b>Ich vermute:</b> Wenn ich die Kabel am Draht tausche, dreht sich die Nadel …</div>
+    <div class="cbrow"><span class="cb"><i></i>genauso wie vorher</span><span class="cb"><i></i>andersherum</span><span class="cb"><i></i>gar nicht</span></div>
+    <div class="hint" style="margin-top:3px">Probier es aus.&nbsp;&nbsp; Meine Vermutung war: <span class="cb"><i></i>richtig</span> <span class="cb"><i></i>falsch</span></div>
+    <div style="margin-top:4px">Das habe ich gesehen:</div><div class="line"></div>
+  </div></div>
+</section>
+<section class="page">
+  <div class="head"><div class="txt"><div class="label">Natur und Technik · Forscherkarte</div><h1>Rund um den Draht</h1><div class="sub">Der Draht geht jetzt senkrecht durch die Pappe.</div></div><svg viewBox="0 0 60 60" width="60" xmlns="http://www.w3.org/2000/svg"><circle cx="30" cy="30" r="25" fill="#fff" stroke="#0f6b7a" stroke-width="3"/><circle cx="30" cy="30" r="19" fill="none" stroke="#b6c6cb" stroke-width="1" stroke-dasharray="2 3"/><g transform="rotate(32 30 30)"><polygon points="30.0,13.0 35.5,30.0 24.5,30.0" fill="#d64545"/><polygon points="30.0,47.0 35.5,30.0 24.5,30.0" fill="#3f9b5f"/></g><circle cx="30" cy="30" r="2.2" fill="#fff"/></svg></div>
+  <div class="idline"><span>Name:</span><span>Klasse:</span><span>Datum:</span></div>
+  <div class="step" style="margin-top:2px"><div class="num amber">3</div><div class="body">
+    <h3>Die Kompasse im Kreis</h3>
+    <div>Stellt die Kompasse nacheinander an die vier Stellen um den Draht. Zeichnet in jeden Kreis, <b>wie die Nadel steht</b>.</div>
+  </div></div>
+  <div class="two">
+    <div><h3>Versuch A</h3><svg viewBox="0 0 230 236" width="230" xmlns="http://www.w3.org/2000/svg" font-family="Avenir Next, Trebuchet MS, Segoe UI, sans-serif"><rect x="8" y="6" width="214" height="206" rx="10" fill="#f6fafb" stroke="#8fa3a9" stroke-width="1.6"/><line x1="26" y1="44" x2="26" y2="20" stroke="#1f2d3a" stroke-width="1.6"/><polygon points="26,15 21,24 31,24" fill="#1f2d3a"/><text x="36" y="36" font-size="11" fill="#1f2d3a">Norden</text><circle cx="115" cy="112" r="60" fill="none" stroke="#b6c6cb" stroke-width="1.2" stroke-dasharray="3 4"/><circle cx="115" cy="52" r="19" fill="#fff" stroke="#0f6b7a" stroke-width="2"/><circle cx="115" cy="52" r="2" fill="#9fb2b8"/><circle cx="175" cy="112" r="19" fill="#fff" stroke="#0f6b7a" stroke-width="2"/><circle cx="175" cy="112" r="2" fill="#9fb2b8"/><circle cx="115" cy="172" r="19" fill="#fff" stroke="#0f6b7a" stroke-width="2"/><circle cx="115" cy="172" r="2" fill="#9fb2b8"/><circle cx="55" cy="112" r="19" fill="#fff" stroke="#0f6b7a" stroke-width="2"/><circle cx="55" cy="112" r="2" fill="#9fb2b8"/><circle cx="115" cy="112" r="11" fill="#fff" stroke="#d9822b" stroke-width="3"/><circle cx="115" cy="112" r="3.6" fill="#d9822b"/><text x="115" y="230" text-anchor="middle" font-size="12" font-weight="600" fill="#d9822b">●  Elektronen fließen auf dich zu</text></svg></div>
+    <div><h3>Versuch B (umgepolt)</h3><svg viewBox="0 0 230 236" width="230" xmlns="http://www.w3.org/2000/svg" font-family="Avenir Next, Trebuchet MS, Segoe UI, sans-serif"><rect x="8" y="6" width="214" height="206" rx="10" fill="#f6fafb" stroke="#8fa3a9" stroke-width="1.6"/><line x1="26" y1="44" x2="26" y2="20" stroke="#1f2d3a" stroke-width="1.6"/><polygon points="26,15 21,24 31,24" fill="#1f2d3a"/><text x="36" y="36" font-size="11" fill="#1f2d3a">Norden</text><circle cx="115" cy="112" r="60" fill="none" stroke="#b6c6cb" stroke-width="1.2" stroke-dasharray="3 4"/><circle cx="115" cy="52" r="19" fill="#fff" stroke="#0f6b7a" stroke-width="2"/><circle cx="115" cy="52" r="2" fill="#9fb2b8"/><circle cx="175" cy="112" r="19" fill="#fff" stroke="#0f6b7a" stroke-width="2"/><circle cx="175" cy="112" r="2" fill="#9fb2b8"/><circle cx="115" cy="172" r="19" fill="#fff" stroke="#0f6b7a" stroke-width="2"/><circle cx="115" cy="172" r="2" fill="#9fb2b8"/><circle cx="55" cy="112" r="19" fill="#fff" stroke="#0f6b7a" stroke-width="2"/><circle cx="55" cy="112" r="2" fill="#9fb2b8"/><circle cx="115" cy="112" r="11" fill="#fff" stroke="#d9822b" stroke-width="3"/><path d="M110,107 L120,117 M120,107 L110,117" stroke="#d9822b" stroke-width="2.6"/><text x="115" y="230" text-anchor="middle" font-size="12" font-weight="600" fill="#d9822b">✕  Elektronen fließen von dir weg</text></svg></div>
+  </div>
+  <div class="legend"><span><i style="background:var(--red)"></i>Nordpol der Nadel rot</span><span><i style="background:var(--green)"></i>Südpol grün</span></div>
+  <div class="hint" style="text-align:center;margin-top:2px">Ohne Strom zeigen alle Nadeln nach Norden, also nach oben.</div>
+
+  <div class="step"><div class="num">4</div><div class="body">
+    <h3>Was fällt dir auf?</h3>
+    <div>Beschreibe in einem Satz, wie die Nadeln um den Draht stehen.</div>
+    <div class="line"></div><div class="line"></div>
+  </div></div>
+
+  <div class="box teal" style="margin-top:12px">
+    <b>Ergänze den Satz:</b> Die Richtung des Magnetfelds hängt von der <span class="gapline"></span> ab.
+    <div style="margin-top:6px"><span class="hint">Wortspeicher:</span> <span class="wort">Stromrichtung</span><span class="wort">Spannung</span><span class="wort">Himmelsrichtung</span></div>
+  </div>
+
+  <div class="box amber" style="margin-top:12px">
+    <h2>Forscher-Plus</h2>
+    <div>Die Nadel schlägt nur wenig aus. Nenne <b>zwei Ideen</b>, wie du den Ausschlag größer machen könntest. Teste eine davon gemeinsam mit deiner Lehrkraft.</div>
+    <div class="line"></div><div class="line"></div>
+  </div>
+</section></body></html>
